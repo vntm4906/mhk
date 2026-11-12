@@ -1,0 +1,15 @@
+HỆ MÃ BA LÔ MHK - VĂN BẢN MẪU ĐỂ MÃ HOÁ THỬ
+
+Hệ mã ba lô là một hệ mã hoá khoá công khai. Người nhận chọn một dãy số siêu tăng, tức là dãy mà mỗi phần tử đều lớn hơn tổng tất cả các phần tử đứng trước nó. Với dãy này, bài toán xếp ba lô 0/1 có thể giải nhanh bằng thuật toán tham lam.
+
+Để tạo khoá công khai, người nhận chọn một số M lớn hơn tổng của dãy siêu tăng, và một số u nguyên tố cùng nhau với M. Mỗi phần tử của khoá công khai được tính bằng phép nhân với u rồi lấy phần dư theo modulo M. Nhìn từ bên ngoài, dãy kết quả trông như một bài toán xếp ba lô thông thường.
+
+Khi mã hoá, người gửi chia bản rõ thành các khối bit có độ dài bằng số phần tử của khoá. Bản mã của mỗi khối là tổng các phần tử khoá công khai tại những vị trí có bit bằng một, lấy phần dư theo modulo M.
+
+Khi giải mã, người nhận nhân bản mã với nghịch đảo của u theo modulo M, sau đó giải bài toán ba lô siêu tăng để tìm lại các bit của bản rõ.
+
+Mặc dù đúng về mặt chức năng, hệ mã này không được coi là an toàn. Các phương pháp tấn công dựa trên quy giản dàn có thể tìm lại bản rõ từ bản mã với chi phí rất nhỏ. Vì vậy, hệ mã chỉ còn giá trị học tập, giúp hiểu nguyên lý của mật mã khoá công khai và vai trò của cửa sập trong thiết kế hệ mã.
+
+Một đặc điểm khác của cách mã hoá này là tính tất định: cùng một khối bản rõ luôn cho cùng một bản mã. Điều đó làm lộ ra cấu trúc lặp của dữ liệu, giống như chế độ mã hoá từng khối độc lập.
+
+Tệp này dài hơn một vài ký tự để thử nghiệm trên dữ liệu thật, bao gồm chữ tiếng Việt có dấu, nhiều đoạn văn và nhiều dòng.
