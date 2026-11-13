@@ -213,31 +213,7 @@ Chạy `git status` để chắc chắn không thấy `public.key`, `private.key
 
 ---
 
-## 9. Notebook
-
-```
-pip install notebook
-jupyter notebook notebooks/mhk_demo.ipynb
-```
-
-Chạy các ô từ trên xuống (Kernel → Restart & Run All). Notebook tự chứa, có **bản sao riêng** của mã lõi (không tự cập nhật khi sửa `src/mhk_core.py`). Tệp chưa kèm kết quả chạy.
-
-## 10. Kiểm thử
-
-Thư mục `tests/` **chưa có tệp kiểm thử** (kế hoạch ở [`tests/README.md`](tests/README.md)). Hiện có 5 ca kiểm thử trong ô 3 của notebook. MHK **không có test vector chuẩn NIST/RFC**; căn cứ đối chiếu là ví dụ trong tài liệu môn học và `pow(a, -1, m)` của Python.
-
-## 11. Quy ước Git
-
-Xem [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md). Thiết lập một lần cho mỗi thành viên:
-
-```
-git config commit.template .gitmessage
-git config core.hooksPath .githooks
-```
-
-Commit theo dạng `<loại>(<phạm vi>): <mô tả>`, ví dụ `fix(core): chặn bit ngoài {0, 1}`. Nhánh theo dạng `<loại>/<số-issue>-<mô-tả>`, ví dụ `test/12-bo-kiem-thu`.
-
-## 12. Xử lý lỗi thường gặp
+## 7. Xử lý lỗi thường gặp
 
 | Thông báo | Nguyên nhân và cách xử lý |
 |---|---|
@@ -249,7 +225,7 @@ Commit theo dạng `<loại>(<phạm vi>): <mô tả>`, ví dụ `fix(core): ch�
 | Chữ tiếng Việt thành dấu `?` trên cmd | Chạy `chcp 65001` và dùng phông Consolas |
 | LLL báo "Không tìm được nghiệm" | Tấn công xác suất; chạy lại hoặc đổi bài toán |
 
-## 13. Giới hạn đã biết
+## 8. Giới hạn đã biết
 
 - **Không an toàn:** chỉ với khoá công khai và bản mã, tấn công LLL trong `mhk_attack.py` khôi phục được bản rõ với N = 64 trong các thử nghiệm khi phát triển. Đó là tấn công xác suất, chỉ thử ở mật độ ba lô khoảng 0,5, và **không phải** tấn công gốc của Shamir.
 - **Mã hoá tất định:** cùng khối bản rõ cho cùng bản mã.
