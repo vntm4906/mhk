@@ -220,12 +220,3 @@ Chạy `git status` để chắc chắn không thấy `public.key`, `private.key
 | `Thiếu src/for_sample_data.py ...` | Mục 15 cần tệp này trong `src/` |
 | Chữ tiếng Việt thành dấu `?` trên cmd | Chạy `chcp 65001` và dùng phông Consolas |
 | LLL báo "Không tìm được nghiệm" | Tấn công xác suất; chạy lại hoặc đổi bài toán |
-
-## 10. Giới hạn đã biết
-
-- **Không an toàn:** chỉ với khoá công khai và bản mã, tấn công LLL trong `mhk_attack.py` khôi phục được bản rõ với N = 64 trong các thử nghiệm khi phát triển. Đó là tấn công xác suất, chỉ thử ở mật độ ba lô khoảng 0,5, và **không phải** tấn công gốc của Shamir.
-- **Mã hoá tất định:** cùng khối bản rõ cho cùng bản mã.
-- **Bản mã giãn nở** khoảng 2 lần.
-- Giới hạn 5 MB khi dùng menu, vì lõi dùng danh sách bit Python tốn bộ nhớ (ước lượng, chưa đo ở kích thước đó).
-- `private.key` lưu văn bản thuần, chỉ chấp nhận được cho bài tập; đã bị `.gitignore` chặn.
-- Chưa có chế độ mã hoá 5 bit/ký tự; chưa có so sánh tốc độ với RSA; chưa có tệp kiểm thử độc lập (xem [`docs/cong_viec_con_lai.md`](docs/cong_viec_con_lai.md)).
