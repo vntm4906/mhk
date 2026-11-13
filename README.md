@@ -209,7 +209,7 @@ Chạy `git status` để chắc chắn không thấy `public.key`, `private.key
 
 ---
 
-## 7. Xử lý lỗi thường gặp
+## 9. Xử lý lỗi thường gặp
 
 | Thông báo | Nguyên nhân và cách xử lý |
 |---|---|
@@ -221,7 +221,7 @@ Chạy `git status` để chắc chắn không thấy `public.key`, `private.key
 | Chữ tiếng Việt thành dấu `?` trên cmd | Chạy `chcp 65001` và dùng phông Consolas |
 | LLL báo "Không tìm được nghiệm" | Tấn công xác suất; chạy lại hoặc đổi bài toán |
 
-## 8. Giới hạn đã biết
+## 10. Giới hạn đã biết
 
 - **Không an toàn:** chỉ với khoá công khai và bản mã, tấn công LLL trong `mhk_attack.py` khôi phục được bản rõ với N = 64 trong các thử nghiệm khi phát triển. Đó là tấn công xác suất, chỉ thử ở mật độ ba lô khoảng 0,5, và **không phải** tấn công gốc của Shamir.
 - **Mã hoá tất định:** cùng khối bản rõ cho cùng bản mã.
