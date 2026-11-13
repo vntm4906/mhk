@@ -1,4 +1,4 @@
-# Hệ mã ba lô Merkle–Hellman (MHK): cài đặt, demo và tấn công trên cmd
+# Hệ mã ba lô Merkle–Hellman (MHK)
 
 Bài tập nhóm môn **An toàn bảo mật thông tin**, Đại học Kinh tế Quốc dân.
 
@@ -15,8 +15,6 @@ mhk-knapsack-demo/
 ├── requirements.txt             Yêu cầu môi trường (không cần thư viện ngoài)
 ├── .gitignore                   Chặn khoá, bản mã, tệp kết quả khỏi Git
 ├── .gitmessage                  Mẫu thông điệp commit
-├── .githooks/commit-msg         Kiểm tra định dạng commit
-├── .github/pull_request_template.md
 ├── src/
 │   ├── mhk_core.py              LÕI thuật toán: sinh khoá, mã hoá, giải mã (không có giao diện)
 │   ├── mhk_io.py                Đọc/ghi khoá, đóng gói bản mã base64, diễn giải từng bước
@@ -32,9 +30,7 @@ mhk-knapsack-demo/
 │   ├── anh_nho.png              Ảnh xám 64×64, 346 byte
 │   ├── vi_du_tinh_tay.txt       Bản tính tay đầy đủ: BTVD1, BTVD2, ví dụ "NEU"
 │   └── vi_du_tinh_tay_so.txt    Chỉ các con số của ví dụ tính tay, 89 byte
-├── tests/README.md              Kế hoạch bộ kiểm thử (chưa có tệp kiểm thử)
-├── results/                     Nơi lưu kết quả chạy và đo đạc
-└── docs/                        Báo cáo, sơ đồ khối, phân công, kịch bản video, quy ước Git
+└── results/                     Nơi lưu kết quả chạy và đo đạc
 ```
 
 **Phụ thuộc:** `mhk_core.py` là tệp then chốt. Ba chương trình dòng lệnh và hai menu đều cần `mhk_core.py` và `mhk_io.py`; menu tấn công cần thêm `mhk_attack.py`; mục chạy sample_data cần `for_sample_data.py`. **Giữ các tệp trong `src/` cùng một thư mục.**
