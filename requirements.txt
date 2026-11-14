@@ -1,0 +1,6 @@
+# Dự án KHÔNG cần cài thư viện ngoài.
+# Yêu cầu: Python >= 3.8 (mã dùng pow(a, -1, m) khi đối chiếu nghịch đảo trong notebook).
+#
+# Tuỳ chọn: chạy notebook notebooks/mhk_demo.ipynb cần Jupyter:
+#   pip install notebook
+# notebook
