@@ -13,8 +13,6 @@ Bài tập nhóm môn **An toàn bảo mật thông tin**, Đại học Kinh t�
 mhk-knapsack-demo/
 ├── README.md                    Tệp này
 ├── requirements.txt             Yêu cầu môi trường (không cần thư viện ngoài)
-├── .gitignore                   Chặn khoá, bản mã, tệp kết quả khỏi Git
-├── .gitmessage                  Mẫu thông điệp commit
 ├── src/
 │   ├── mhk_core.py              LÕI thuật toán: sinh khoá, mã hoá, giải mã (không có giao diện)
 │   ├── mhk_io.py                Đọc/ghi khoá, đóng gói bản mã base64, diễn giải từng bước
@@ -45,8 +43,8 @@ mhk-knapsack-demo/
 4. **Mọi lệnh chạy từ thư mục gốc của repo.** Khoá `public.key`, `private.key` được tạo và đọc ở thư mục hiện tại.
 
 ```
-git clone https://github.com/<tai-khoan>/<ten-repo>.git
-cd <ten-repo>
+git clone https://github.com/<tai-khoan>/mhk.git
+cd mhk
 ```
 
 ---
